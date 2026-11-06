@@ -12,6 +12,8 @@
 
 [English](README.md) · 한국어
 
+📝 만든 이야기: [velog](https://velog.io/@haul/fix-proposal-agent-bug-report-skill)
+
 </div>
 
 ## 한눈에

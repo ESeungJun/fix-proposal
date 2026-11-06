@@ -12,6 +12,8 @@ After the fix, an **as-is / to-be checklist** checks each promise against measur
 
 English · [한국어](README.ko.md)
 
+📝 Story behind it: [Medium](https://medium.com/@haul/only-10-of-my-ai-agents-34-bug-reports-said-what-the-fix-would-improve-fd0f98c777c4) · [velog (Korean)](https://velog.io/@haul/fix-proposal-agent-bug-report-skill)
+
 </div>
 
 ## At a glance
