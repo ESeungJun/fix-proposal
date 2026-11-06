@@ -1,0 +1,40 @@
+{
+ "m": "sonnet",
+ "c": "base",
+ "s": "P1",
+ "r": 2,
+ "answer": "## 문제 요약\n\n`queryReadOnly`가 `select 1` 같은 단순 조회에서도 실패합니다. 원인은 연결 정보가 아니라 **`supabase` CLI 3.0.0의 동작 변화**로 보입니다.\n\n- 에이전트 모드에서 CLI가 SQL 실행 전에 확인(consent)을 요구합니다 (`HostedMutationConsentRequiredError`). 에이전트 모드에서는 확인을 받을 수 없어서 실패합니다.\n- CLI가 제안한 대로 `--read-only`를 붙이면 정상 동작합니다 (`{\"rows\":[{\"x\":1}], ...}`).\n- 현재 코드의 `args`에는 `--read-only`가 없습니다.\n\n## 같이 보이는 문제\n\n1. **오류 메시지가 오진을 유도합니다.** `stdio`의 stderr를 `'ignore'`로 버리고 `catch`에서 무조건 \"SUPABASE_DB_URL을 확인한다\"고 안내합니다. 실제 원인은 URL이 아니라 consent였는데, 이 메시지로는 엉뚱한 곳을 찾게 됩니다. 또 CLI의 오류 JSON은 stdout에 나온 것으로 보이는데, 이것도 읽지 않고 버립니다.\n2. **`WRITE_WORDS` 정규식은 안전장치로 약합니다.** `merge`, `grant`, `revoke`, `copy`, `call`, `do`, `vacuum` 등은 막지 못하고, 세미콜론으로 이어진 다중 문장도 별도로 막지 않습니다. `--read-only`를 쓰면 서버/CLI 측에서 읽기 전용이 강제되므로 이 정규식은 보조 수단으로 낮출 수 있습니다. 다만 `--read-only`의 실제 강제 범위는 아직 확인하지 않았습니다.\n3. **`out` 선언이 보이지 않습니다.** 26번 줄에서 `out = ...`을 쓰는데, 발췌 범위에는 `let out`이 없습니다. 위쪽에 있을 수도 있으니 확인이 필요합니다.\n4. **사람이 터미널에서 직접 돌린 경우는 검증되지 않았습니다.** 에이전트 모드가 아니면 consent 오류가 안 나서 지금 코드도 통과할 수 있습니다. 그래서 \"사람 환경에서는 되고 에이전트 환경에서만 깨지는\" 상태일 수 있습니다. 이 점이 확인되지 않아 영향 범위도 아직 단정할 수 없습니다.\n\n## 영향 범위\n\n`queryReadOnly`를 쓰는 `scripts/real-match-check.mjs`와 `scripts/build-champion-builds.mjs`는 에이전트 모드에서 같은 이유로 실패할 가능성이 높습니다.\n\n## 제안하는 다음 행동\n\n아직 아무것도 고치지 않았습니다. 진행해도 될지 알려주세요. 제안 순서는 아래와 같습니다.\n\n1. **확인 먼저 (읽기만):**\n   - `match-log.mjs` 전체를 읽어 `out` 선언과 `WRITE_WORDS` 정의, 다른 호출부를 확인합니다.\n   - `npx supabase db query --help`로 `--read-only`의 의미와 3.0.0 이전 버전에서도 지원되는지 확인합니다.\n2. **수정안 (확인 후):**\n   - `args`에 `--read-only`를 추가합니다.\n   - `catch`에서 stderr와 stdout의 오류 JSON을 읽어 실제 `code`/`message`를 오류 메시지에 포함시키고, URL 안내는 그 원인일 때만 보여줍니다.\n   - `WRITE_WORDS`는 유지하되 보조 검사임을 주석으로 남기고, 필요하면 키워드를 보강합니다.\n3. **검증:**\n   - `select 1` 호출이 에이전트 모드에서 통과하는지 확인합니다.\n   - 쓰기 문장이 `--read-only`에서 실제로 거부되는지 확인합니다. 이 검증은 운영 DB에서 위험할 수 있으니, 실행 전에 어떤 DB에 연결되는지 먼저 확인하겠습니다.\n   - 가능하면 사용자가 터미널에서 직접 `real-match-check.mjs`를 한 번 돌려 사람 환경에서도 동작하는지 확인해 주세요.\n\n이대로 1단계부터 진행할까요?",
+ "chars": 1927,
+ "cost": 0.021948000000000002,
+ "out_tokens": 1618,
+ "grade": {
+  "loc": {
+   "pass": true,
+   "quote": "현재 코드의 `args`에는 `--read-only`가 없습니다."
+  },
+  "evidence": {
+   "pass": true,
+   "quote": "에이전트 모드에서 CLI가 SQL 실행 전에 확인(consent)을 요구합니다 (`HostedMutationConsentRequiredError`)."
+  },
+  "fix": {
+   "pass": true,
+   "quote": "`args`에 `--read-only`를 추가합니다."
+  },
+  "benefit": {
+   "pass": false,
+   "quote": ""
+  },
+  "expected": {
+   "pass": true,
+   "quote": "`select 1` 호출이 에이전트 모드에서 통과하는지 확인합니다."
+  },
+  "unknown": {
+   "pass": true,
+   "quote": "**사람이 터미널에서 직접 돌린 경우는 검증되지 않았습니다.** 에이전트 모드가 아니면 consent 오류가 안 나서 지금 코드도 통과할 수 있습니다."
+  },
+  "ask": {
+   "pass": true,
+   "quote": "이대로 1단계부터 진행할까요?"
+  }
+ }
+}

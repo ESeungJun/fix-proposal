@@ -1,0 +1,3761 @@
+{
+ "summary": {
+  "judgments": 468,
+  "agree": 446,
+  "agreement": 0.953,
+  "first": {
+   "base": "199/234",
+   "skill": "230/234"
+  },
+  "second": {
+   "base": "200/234",
+   "skill": "233/234"
+  }
+ },
+ "pairs": [
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "benefit",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "benefit",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "expected",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "benefit",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "benefit",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "benefit",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "trap",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "base",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "benefit",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "benefit",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "loc",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "loc",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "benefit",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "benefit",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "expected",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "trap",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "each",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "trap",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": false
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P1",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P2",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "loc",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "evidence",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "fix",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "benefit",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "expected",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "unknown",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "P3",
+   "k": "ask",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V1",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "noOverclaim",
+   "first": false,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V2",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "each",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "before",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "after",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "trap",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "noOverclaim",
+   "first": true,
+   "second": true
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "s": "V3",
+   "k": "regress",
+   "first": true,
+   "second": true
+  }
+ ]
+}

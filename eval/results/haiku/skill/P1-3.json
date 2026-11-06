@@ -1,0 +1,40 @@
+{
+ "m": "haiku",
+ "c": "skill",
+ "s": "P1",
+ "r": 3,
+ "answer": "## 요약\n\n`queryReadOnly` 가 supabase CLI를 `--read-only` 없이 호출해서, agent 모드에서는 SQL이 실행되지 않고 거절됩니다. 함수는 원인을 숨기고 \"DB_URL을 확인하라\"는 메시지만 던지므로, 실제 원인과 다른 곳을 찾게 됩니다. 아직 아무것도 고치지 않았습니다.\n\n## 제안 1: `--read-only` 추가와 에러 원문 노출 (우선 권장)\n\n| 칸 | 내용 |\n|---|---|\n| **지금 문제** | 25행 `args` 에 `--read-only` 가 없다. 같은 URL로 직접 실행한 결과: 플래그 없이 `select 1 as x` → `HostedMutationConsentRequiredError ... running in agent mode`. `--read-only` 를 붙이면 → `{\"rows\":[{\"x\":1}]}`. 그런데 26행은 stdout/stderr를 모두 버리고(`stdio: ['ignore','pipe','ignore']`), 27행은 `종료 1` 과 \"DB_URL 확인\"만 던진다. 그래서 실제 원인(확인 거절)이 메시지에 안 나온다. 이것은 재현한 사실이다. |\n| **고치는 방법** | (a) `args` 에 `'--read-only'` 추가. (b) catch 에서 `err.stdout` 의 에러 JSON 의 `message` 를 에러 메시지에 포함하되, 연결 URL은 빼고 쓴다. 범위는 `scripts/lib/match-log.mjs` 한 파일이다. 다른 저장소나 복사본은 건드리지 않는다. |\n| **나아지는 점** | 두 호출자(`real-match-check.mjs`, `build-champion-builds.mjs`)가 agent 모드에서도 조회할 수 있게 된다. 실패하면 원인 문구가 그대로 보여서 DB_URL 문제로 잘못 찾아 헤매지 않는다. 쓰기 방지가 정규식 한 겹에서, DB 쪽 read-only 플래그까지 두 겹이 된다. |\n| **예상 결과** | ① 고친 뒤 `queryReadOnly('select 1 as x')` 가 `[{x:1}]` 을 반환한다(고치기 전: throw). ② 잘못된 SQL을 넣으면 에러 원문이 메시지에 보인다. ③ `create temp table t(x int)` 를 보내면 read-only 트랜잭션 거절로 실패한다. 이 ③은 예상이고 아직 확인하지 않았다. |\n\n## 제안 2: `out` 변수 선언 누락 (스니펫 원본 확인 필요)\n\n| 칸 | 내용 |\n|---|---|\n| **지금 문제** | 26행 `out = execFileSync(...)` 에 `let`/`const` 가 없다. `.mjs` 는 strict 모드라 성공 경로에서 ReferenceError가 난다. catch 가 이를 \"종료 undefined 실패\"로 바꿔 버린다. 지금 기록에는 안 보이는데, 실패 경로에서는 `execFileSync` 가 먼저 던지기 때문이다. 스니펫이 잘린 것일 수도 있어서 **추정**이다. |\n| **고치는 방법** | `let out;` 을 선언하거나 `const out = execFileSync(...)` 로 try 안에서 바로 받는다. 파일 원본에서 선언 유무를 먼저 확인한다. |\n| **나아지는 점** | 성공 경로가 실패로 잘못 보고되지 않는다. 제안 1을 고치면 성공 경로가 처음으로 실행되므로 이 문제가 바로 드러난다. |\n| **예상 결과** | 선언 추가 후 성공 시 CLI 출력 문자열이 반환된다. 고치기 전에는 `node -e` 로 선언 없는 최소 예제를 돌려 ReferenceError를 재현해 확인한다. |\n\n## 확인 못 한 것\n\n- **사람이 터미널에서 직접 돌렸을 때의 동작**: 아무도 안 해 봤습니다. 확인 프롬프트가 뜨는지, 거절되는지 모릅니다. 확인하려면 본인 터미널에서 `--read-only` 없이 `select 1` 을 한 번 실행해 결과를 알려 주시면 됩니다.\n- **호출자 두 곳이 지금 실제로 실패하는지**: 돌려 보지 않았습니다. 같은 함수를 쓰므로 실패할 가능성이 높다고 추정합니다.\n- **곁가지(우선순위 낮음)**: `WRITE_WORDS` 정규식에는 `call`, `do`, `grant`, `copy`, `set` 같은 쓰기 명령이 빠져 있습니다. `--read-only` 가 적용되면 1차 방어가 되므로 급하지 않습니다. 재현은 하지 않았습니다.\n\n몇 번을 진행할까요? 추천 순서는 **1 → 2**이고, 사람 터미널 확인은 결과가 나오면 그에 맞춰 판단하겠습니다.",
+ "chars": 2227,
+ "cost": 0.0026612800000000002,
+ "out_tokens": 5254,
+ "grade": {
+  "loc": {
+   "pass": true,
+   "quote": "25행 `args` 에 `--read-only` 가 없다."
+  },
+  "evidence": {
+   "pass": true,
+   "quote": "플래그 없이 `select 1 as x` → `HostedMutationConsentRequiredError ... running in agent mode`. `--read-only` 를 붙이면 → `{\"rows\":[{\"x\":1}]}`."
+  },
+  "fix": {
+   "pass": true,
+   "quote": "(a) `args` 에 `'--read-only'` 추가. (b) catch 에서 `err.stdout` 의 에러 JSON 의 `message` 를 에러 메시지에 포함하되, 연결 URL은 빼고 쓴다."
+  },
+  "benefit": {
+   "pass": true,
+   "quote": "두 호출자(`real-match-check.mjs`, `build-champion-builds.mjs`)가 agent 모드에서도 조회할 수 있게 된다. 실패하면 원인 문구가 그대로 보여서 DB_URL 문제로 잘못 찾아 헤매지 않는다. 쓰기 방지가 정규식 한 겹에서, DB 쪽 read-only 플래그까지 두 겹이 된다."
+  },
+  "expected": {
+   "pass": true,
+   "quote": "① 고친 뒤 `queryReadOnly('select 1 as x')` 가 `[{x:1}]` 을 반환한다(고치기 전: throw)."
+  },
+  "unknown": {
+   "pass": true,
+   "quote": "**사람이 터미널에서 직접 돌렸을 때의 동작**: 아무도 안 해 봤습니다. 확인 프롬프트가 뜨는지, 거절되는지 모릅니다."
+  },
+  "ask": {
+   "pass": true,
+   "quote": "몇 번을 진행할까요? 추천 순서는 **1 → 2**이고"
+  }
+ }
+}

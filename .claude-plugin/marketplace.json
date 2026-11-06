@@ -1,0 +1,15 @@
+{
+  "name": "fix-proposal",
+  "description": "fix-proposal — bug reports and fix proposals that say where, how, what improves and what to expect, then verify every promise with an as-is / to-be checklist.",
+  "owner": {
+    "name": "ESeungJun",
+    "url": "https://github.com/ESeungJun"
+  },
+  "plugins": [
+    {
+      "name": "fix-proposal",
+      "source": "./plugins/fix-proposal",
+      "description": "Make the agent state what is wrong, how to fix it, what gets better and the expected result, then verify each promise with measured as-is / to-be checks."
+    }
+  ]
+}

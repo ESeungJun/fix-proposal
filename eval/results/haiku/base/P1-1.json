@@ -1,0 +1,40 @@
+{
+ "m": "haiku",
+ "c": "base",
+ "s": "P1",
+ "r": 1,
+ "answer": "## 요약\n\n`queryReadOnly`가 지금 상태로는 동작하지 않는다. 원인은 `--read-only` 옵션이 빠져 있다는 점이다. 게다가 실패 원인을 잘못 알려 주는 에러 처리 때문에 \"URL 확인하라\"는 엉뚱한 안내가 나온다. 아직 아무것도 수정하지 않았다.\n\n## 확인된 문제\n\n**1. `--read-only` 누락 (직접 원인)**\nCLI는 agent 모드에서 SQL 실행 전에 확인을 요구하는 `HostedMutationConsentRequiredError`를 낸다. 읽기 전용 문장이라도 옵션 없이 보내면 이 게이트에 걸린다. 실행 기록에서 `--read-only`를 붙이면 `{\"rows\":[{\"x\":1}]}`이 정상 반환되는 것도 이를 보여 준다.\n\n**2. 에러 메시지가 원인을 가린다**\n- `stdio`의 stderr가 `'ignore'`라서 CLI가 stdout에 낸 JSON 에러(`error.code`, `suggestion`)를 버린다.\n- `catch`는 종료 코드만 쓰고, 메시지는 항상 \"`SUPABASE_DB_URL`을 확인하라\"로 고정돼 있다. 실제로는 URL 문제가 아니었다.\n\n**3. `out` 선언 누락 (`--read-only`를 넣으면 드러날 잠재 버그)**\n보이는 범위(23–27행)에 `let out` / `const out` 선언이 없다. ES 모듈은 strict 모드라서 `out = ...` 대입은 `ReferenceError`가 된다. 이 대입이 `try` 안에 있어서 실행 성공 후에도 catch로 빠지고, 역시 \"supabase db query 실패\"라는 잘못된 메시지가 나온다. 파일 전체에서 선언이 있는지 확인이 필요하다.\n\n**4. `WRITE_WORDS` 정규식은 보조 장치일 뿐이다**\n- 컬럼명이나 문자열 리터럴에 `update` 같은 단어가 있으면 정상 SELECT도 막는다(오탐).\n- 텍스트 검사는 우회 가능성이 있으므로 실제 읽기 전용 보장은 `--read-only`가 맡아야 한다. 다만 이 옵션이 트랜잭션 수준으로 막는지, 파싱 수준인지는 아직 확인하지 못했다. 실행 기록의 `warning` 필드가 잘려 있다.\n\n**5. 기타**\n- `npx --yes supabase`는 실행 시점에 버전이 바뀔 수 있다. 로컬 버전은 3.0.0이다. devDependency로 고정하는 편이 낫다.\n- DB URL을 argv로 넘기면 `ps` 목록에 노출된다. 환경 변수로 넘길 수 있는지 `supabase db query --help`로 확인할 가치가 있다.\n\n## 사람이 터미널에서 돌렸을 때\n\n아직 확인되지 않았다. 다만 `stdio`의 stdin이 `'ignore'`이므로, 사람이 돌릴 때도 CLI가 확인 프롬프트를 띄우려 하면 응답하지 못하고 실패하거나 멈출 수 있다. 실제 결과는 한 번 돌려 봐야 안다.\n\n## 제안하는 다음 단계\n\n1. **최소 수정 (승인 시 진행)**\n   - `args`에 `--read-only` 추가\n   - `const out =` 선언 추가\n   - catch에서 `err.stdout`/stderr의 CLI JSON `error.code`와 `suggestion`을 메시지에 포함\n   - 종료 코드 기반의 고정 문구를 실제 원인 기반으로 바꿈\n2. **검증**\n   - `queryReadOnly('select 1 as x')`가 `[{x:1}]`을 반환하는지 확인\n   - `WRITE_WORDS` 오탐 케이스(예: 컬럼명에 `update`가 든 SELECT) 확인\n   - `UPDATE`/`DELETE` 문장이 함수 단계에서 거부되는지 확인\n3. **사람 터미널 테스트 (사용자가 직접 실행)**\n   터미널에서 `node -e \"...\"`로 같은 호출을 한 번 돌려서 결과를 알려 주면, 비대화형과 대화형의 차이를 바로 알 수 있다.\n4. **두 호출처 확인**\n   `real-match-check.mjs`와 `build-champion-builds.mjs`가 반환값과 에러 처리에서 의존하는 부분이 있는지 본다. 수정 후 실제 DB에 읽기 쿼리를 날리는 실행은 먼저 허락을 받겠다.\n\n**질문**\n- 1번의 최소 수정을 진행해도 될까?\n- `out` 선언이 파일 다른 곳에 있는지 제가 전체 파일을 읽어 확인해도 될까?\n- 사람 터미널 테스트는 직접 해 주실 수 있나요, 아니면 제가 대신 어떤 명령을 준비할까요?",
+ "chars": 2155,
+ "cost": 0.0022576000000000002,
+ "out_tokens": 3930,
+ "grade": {
+  "loc": {
+   "pass": true,
+   "quote": "보이는 범위(23–27행)에 `let out` / `const out` 선언이 없다."
+  },
+  "evidence": {
+   "pass": true,
+   "quote": "CLI는 agent 모드에서 SQL 실행 전에 확인을 요구하는 `HostedMutationConsentRequiredError`를 낸다."
+  },
+  "fix": {
+   "pass": true,
+   "quote": "`args`에 `--read-only` 추가"
+  },
+  "benefit": {
+   "pass": false,
+   "quote": ""
+  },
+  "expected": {
+   "pass": true,
+   "quote": "`queryReadOnly('select 1 as x')`가 `[{x:1}]`을 반환하는지 확인"
+  },
+  "unknown": {
+   "pass": true,
+   "quote": "아직 확인되지 않았다. 다만 `stdio`의 stdin이 `'ignore'`이므로, 사람이 돌릴 때도 CLI가 확인 프롬프트를 띄우려 하면 응답하지 못하고 실패하거나 멈출 수 있다. 실제 결과는 한 번 돌려 봐야 안다."
+  },
+  "ask": {
+   "pass": true,
+   "quote": "1번의 최소 수정을 진행해도 될까?"
+  }
+ }
+}

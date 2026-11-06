@@ -1,0 +1,40 @@
+{
+ "m": "haiku",
+ "c": "base",
+ "s": "P2",
+ "r": 2,
+ "answer": "## 문제 요약\n\n검색창이 **키 입력마다** 요청을 보내고 있고, 응답이 도착한 순서대로 결과를 덮어써서 화면에 엉뚱한 결과가 남을 수 있습니다. 아직 아무것도 수정하지 않았습니다.\n\n## 원인\n\n1. **디바운스가 없습니다.** `useEffect`가 `q`가 바뀔 때마다 `fetch`를 호출합니다. \"아이폰 케이스\"를 입력하면 12번 요청이 나갑니다.\n2. **한글 조합 중간 상태가 그대로 요청됩니다.** `ㅇ`, `아ㅇ`, `아이ㅍ`처럼 조합 중인 글자가 `onChange`로 들어와 쿼리가 됩니다. 실제로 사용자가 검색하려던 값이 아닙니다.\n3. **응답 순서를 보장하지 않습니다.** 이전 요청을 취소하거나 무시하는 장치가 없어서, 늦게 도착한 옛 응답(`케ㅇ`)이 `setItems`로 최신 결과를 덮어씁니다. 이 결과는 네트워크 타이밍에 따라 달라지므로 재현할 때마다 다르게 나올 수 있습니다.\n4. **에러 처리가 없습니다.** `.catch`가 없어서 네트워크 오류나 non-JSON 응답이 조용히 사라집니다. 쿼리를 지웠을 때 이전 `items`도 그대로 남습니다.\n\n## 제안하는 수정 방향\n\n- **조합 중 요청 건너뛰기:** `onCompositionEnd`에서 쿼리를 확정하거나, `e.nativeEvent.isComposing`이 `true`인 동안에는 `setQ`를 호출하지 않습니다.\n- **디바운스 적용:** 예를 들어 250~300ms 동안 입력이 없을 때만 요청합니다.\n- **stale 응답 무시:** `useEffect` 내부에서 `AbortController`로 이전 요청을 취소하거나, `let ignore = false`로 cleanup 시 무시 플래그를 세웁니다.\n- **에러 처리 및 빈 값 처리:** `.catch`를 추가하고, `q`가 비었을 때 `items`를 비웁니다.\n\n스케치는 대략 이런 모양입니다(아직 적용하지 않은 제안입니다).\n\n```tsx\nconst [q, setQ] = useState('');\nconst [items, setItems] = useState([]);\n\nuseEffect(() => {\n  if (!q) { setItems([]); return; }\n  const ctrl = new AbortController();\n  const t = setTimeout(() => {\n    fetch(`/api/search?q=${encodeURIComponent(q)}`, { signal: ctrl.signal })\n      .then(r => r.json())\n      .then(setItems)\n      .catch(e => { if (e.name !== 'AbortError') console.error(e); });\n  }, 300);\n  return () => { clearTimeout(t); ctrl.abort(); };\n}, [q]);\n\nreturn (\n  <input\n    value={q}\n    onChange={(e) => {\n      if (!e.nativeEvent.isComposing) setQ(e.target.value);\n    }}\n    onCompositionEnd={(e) => setQ(e.currentTarget.value)}\n  />\n);\n```\n\n## 확인이 필요한 사항\n\n1. **서버 요청 제한:** 서버 쪽에 rate limit이 있는지 아시나요? 있다면 디바운스 값을 그에 맞춰 정하겠습니다.\n2. **디바운스 시간:** 250ms, 300ms 중 어떤 값을 원하시나요? 아니면 다른 값이 있나요?\n3. **범위:** 위 수정 중 어디까지 적용할까요? 최소 수정(디바운스 + stale 응답 무시)만 할지, 조합 처리와 에러 처리까지 함께 할지 알려 주세요.\n4. **테스트:** 수정 후 이 시나리오를 검증하는 테스트(예: 조합 입력 시뮬레이션, 응답 순서 역전 시뮬레이션)도 추가할까요?\n\n답해 주시면 바로 수정에 들어가겠습니다.",
+ "chars": 1948,
+ "cost": 0.0013628099999999999,
+ "out_tokens": 2699,
+ "grade": {
+  "loc": {
+   "pass": true,
+   "quote": "`useEffect`가 `q`가 바뀔 때마다 `fetch`를 호출합니다."
+  },
+  "evidence": {
+   "pass": true,
+   "quote": "\"아이폰 케이스\"를 입력하면 12번 요청이 나갑니다."
+  },
+  "fix": {
+   "pass": true,
+   "quote": "`useEffect` 내부에서 `AbortController`로 이전 요청을 취소하거나, `let ignore = false`로 cleanup 시 무시 플래그를 세웁니다."
+  },
+  "benefit": {
+   "pass": false,
+   "quote": ""
+  },
+  "expected": {
+   "pass": false,
+   "quote": ""
+  },
+  "unknown": {
+   "pass": true,
+   "quote": "서버 쪽에 rate limit이 있는지 아시나요? 있다면 디바운스 값을 그에 맞춰 정하겠습니다."
+  },
+  "ask": {
+   "pass": true,
+   "quote": "답해 주시면 바로 수정에 들어가겠습니다."
+  }
+ }
+}

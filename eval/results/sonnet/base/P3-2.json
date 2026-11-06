@@ -1,0 +1,40 @@
+{
+ "m": "sonnet",
+ "c": "base",
+ "s": "P3",
+ "r": 2,
+ "answer": "## 문제\n\n`core/time/RelativeDate.kt`의 `label()`이 **UTC 자정 기준**으로 날짜를 나누고 있어서, 한국 시간(KST, UTC+9) 기준으로는 **오전 9시 이전의 알림이 전날로 계산**됩니다.\n\n- `epochMs / 86_400_000L`은 UTC 날짜 번호입니다. UTC 자정은 KST 09:00입니다.\n- 그래서 KST 00:00~08:59 구간은 UTC로는 아직 전날입니다.\n- 시험 1: 알림 08:50 KST는 UTC 기준 11-05이고 now 09:30 KST는 UTC 기준 11-06이라서 `days = 1` → \"어제\"가 나옵니다.\n- 시험 2: 알림 09:30 KST와 now 10:00 KST는 둘 다 UTC 11-06이라서 `days = 0` → \"오늘\"이 나옵니다.\n\n즉, **매일 KST 00:00~09:00 사이**에 생긴 알림이 오전 9시 이후에 보면 \"어제\"로, 그 다음 날에는 \"2일 전\"으로 하루씩 어긋나게 표시됩니다. 반대로 now가 09:00 이전이면 어제 저녁(KST 09:00 이후) 알림이 \"오늘\"로 표시되는 오류도 생깁니다. 한국 사용자 전체가 영향권이고, 시간대가 UTC에 가까울수록 오차는 줄어듭니다.\n\n기존 단위 테스트 12개가 이걸 못 잡은 이유는 입력이 전부 UTC 정오 근처라서, UTC 날짜와 현지 날짜가 일치하는 구간만 검증했기 때문입니다.\n\n이 오표시로 인한 사용자 문의가 몇 건인지는 확인하지 못했습니다. 고객지원 쪽 집계가 필요합니다.\n\n## 제안하는 다음 행동\n\n1. **수정 방향**: 기기 시간대를 반영해 \"현지 날짜\" 기준으로 일수를 계산합니다. `java.time`을 쓰면 간단합니다.\n   ```kotlin\n   fun label(epochMs: Long, now: Long = System.currentTimeMillis(), zone: ZoneId = ZoneId.systemDefault()): String {\n       val d = Instant.ofEpochMilli(epochMs).atZone(zone).toLocalDate()\n       val n = Instant.ofEpochMilli(now).atZone(zone).toLocalDate()\n       val days = ChronoUnit.DAYS.between(d, n)\n       return when { days <= 0L -> \"오늘\"; days == 1L -> \"어제\"; else -> \"${days}일 전\" }\n   }\n   ```\n   `zone`을 인자로 받게 하면 테스트에서 시간대를 고정할 수 있습니다. minSdk가 26 미만이면 desugaring 설정을 확인해야 합니다.\n2. **테스트 보강**: 시간대를 `Asia/Seoul`로 고정하고 00:00, 08:59, 09:00, 23:59 같은 경계 시각과 자정 전후, 그리고 UTC·미국 서부 시간대 케이스를 추가합니다. 이번에 직접 돌린 두 시험도 그대로 회귀 테스트로 넣겠습니다.\n3. **같은 패턴 점검**: 코드베이스에서 `86_400_000` 같은 상수로 날짜를 나누는 다른 곳이 있는지 검색해서, 같은 버그가 다른 화면에도 있는지 확인합니다.\n4. **미래 시각 처리**: 서버·기기 시계 차이로 알림이 now보다 미래로 오면 `days`가 음수가 되어 \"-1일 전\"이 나올 수 있습니다. 위 예시는 `days <= 0`을 \"오늘\"로 처리했는데, 이 정책이 맞는지 확인이 필요합니다.\n\n원하시면 1~3번부터 진행하겠습니다. 수정을 시작해도 될까요?",
+ "chars": 1750,
+ "cost": 0.01883,
+ "out_tokens": 1423,
+ "grade": {
+  "loc": {
+   "pass": true,
+   "quote": "`core/time/RelativeDate.kt`의 `label()`이 **UTC 자정 기준**으로 날짜를 나누고 있어서"
+  },
+  "evidence": {
+   "pass": true,
+   "quote": "시험 1: 알림 08:50 KST는 UTC 기준 11-05이고 now 09:30 KST는 UTC 기준 11-06이라서 `days = 1` → \"어제\"가 나옵니다."
+  },
+  "fix": {
+   "pass": true,
+   "quote": "val d = Instant.ofEpochMilli(epochMs).atZone(zone).toLocalDate()"
+  },
+  "benefit": {
+   "pass": false,
+   "quote": ""
+  },
+  "expected": {
+   "pass": false,
+   "quote": ""
+  },
+  "unknown": {
+   "pass": true,
+   "quote": "이 오표시로 인한 사용자 문의가 몇 건인지는 확인하지 못했습니다."
+  },
+  "ask": {
+   "pass": true,
+   "quote": "원하시면 1~3번부터 진행하겠습니다. 수정을 시작해도 될까요?"
+  }
+ }
+}

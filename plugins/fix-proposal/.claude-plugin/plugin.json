@@ -1,0 +1,10 @@
+{
+  "name": "fix-proposal",
+  "version": "0.1.0",
+  "description": "Bug reports and fix proposals in four fields (problem, fix, benefit, expected result), then an as-is / to-be checklist that verifies each promise with measurements.",
+  "author": { "name": "ESeungJun", "url": "https://github.com/ESeungJun" },
+  "homepage": "https://github.com/ESeungJun/fix-proposal",
+  "repository": "https://github.com/ESeungJun/fix-proposal",
+  "license": "MIT",
+  "keywords": ["skills", "bug-report", "verification", "agent-behavior", "claude-code"]
+}

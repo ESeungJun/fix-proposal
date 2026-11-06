@@ -1,0 +1,154 @@
+{
+ "res": {
+  "sonnet|P|loc": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|P|evidence": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|P|fix": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|P|benefit": {
+   "base": "4/9",
+   "skill": "9/9"
+  },
+  "sonnet|P|expected": {
+   "base": "2/9",
+   "skill": "9/9"
+  },
+  "sonnet|P|unknown": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|P|ask": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|V|each": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|V|before": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|V|after": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "sonnet|V|trap": {
+   "base": "8/9",
+   "skill": "9/9"
+  },
+  "sonnet|V|noOverclaim": {
+   "base": "5/9",
+   "skill": "7/9"
+  },
+  "sonnet|V|regress": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|P|loc": {
+   "base": "7/9",
+   "skill": "9/9"
+  },
+  "haiku|P|evidence": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|P|fix": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|P|benefit": {
+   "base": "5/9",
+   "skill": "9/9"
+  },
+  "haiku|P|expected": {
+   "base": "3/9",
+   "skill": "9/9"
+  },
+  "haiku|P|unknown": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|P|ask": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|V|each": {
+   "base": "8/9",
+   "skill": "9/9"
+  },
+  "haiku|V|before": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|V|after": {
+   "base": "9/9",
+   "skill": "9/9"
+  },
+  "haiku|V|trap": {
+   "base": "7/9",
+   "skill": "9/9"
+  },
+  "haiku|V|noOverclaim": {
+   "base": "6/9",
+   "skill": "7/9"
+  },
+  "haiku|V|regress": {
+   "base": "9/9",
+   "skill": "9/9"
+  }
+ },
+ "summary": [
+  {
+   "m": "sonnet",
+   "c": "base",
+   "p": 100,
+   "n": 117,
+   "full": 5,
+   "runs": 18,
+   "chars": 1173,
+   "out": 1031,
+   "cost": 0.2541209
+  },
+  {
+   "m": "sonnet",
+   "c": "skill",
+   "p": 115,
+   "n": 117,
+   "full": 16,
+   "runs": 18,
+   "chars": 1812,
+   "out": 2165,
+   "cost": 0.4317391
+  },
+  {
+   "m": "haiku",
+   "c": "base",
+   "p": 99,
+   "n": 117,
+   "full": 7,
+   "runs": 18,
+   "chars": 1400,
+   "out": 2421,
+   "cost": 0.023520259999999998
+  },
+  {
+   "m": "haiku",
+   "c": "skill",
+   "p": 115,
+   "n": 117,
+   "full": 16,
+   "runs": 18,
+   "chars": 1754,
+   "out": 3455,
+   "cost": 0.03346893
+  }
+ ]
+}

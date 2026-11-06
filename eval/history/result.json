@@ -1,0 +1,27 @@
+{
+ "prop": {
+  "sampled": 40,
+  "relevant": 34,
+  "loc": "28/34",
+  "evidence": "23/34",
+  "fix": "28/34",
+  "benefit": "10/34",
+  "expected": "6/34",
+  "all4": "4/34"
+ },
+ "done": {
+  "sampled": 40,
+  "relevant": 38,
+  "before": "9/38",
+  "after": "18/38",
+  "perClaim": "12/38",
+  "limits": "29/38"
+ },
+ "population": {
+  "assistant_texts": 3814,
+  "projects": 87,
+  "proposals": 248,
+  "done_reports": 326,
+  "period": "2026-09-28 ~ 2026-11-06 05:30 (스킬 만들기 전)"
+ }
+}
